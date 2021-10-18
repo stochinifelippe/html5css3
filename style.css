@@ -1,0 +1,110 @@
+/*
+    Folha de estilo do site one page HTML5 e CSS3
+    @author Professor José de Assis
+    joseassis.com.br
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+/* CSS Reset */
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/* Importação Google fonts */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+/* Layout */
+
+.container {
+    margin: 0 auto;
+    background-color: #dcdcdc;
+}
+
+.Flex {
+    display: flex;
+    justify-content: space-between;
+    background-color: #a9a9a9;
+}
+
+/* Topo do site */
+
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Cabeçalho */
+header {
+    height: 60px;
+}
+
+#logo img {
+    width: 128px;
+    height: 128px;
+}
+
+
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 576px) {
+    body {
+        background-color: #0ff;
+    }
+    /* Layout */
+    .container {
+        max-width: 540px;
+    }
+}
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
+    body {
+        background-color: #ff0;
+    }
+    /* Layout */
+    .container {
+        max-width: 720px;
+    }
+}
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px) {
+    body {
+        background-color: #ff6600;
+    }
+    /* Layout */
+    .container {
+        max-width: 960px;
+    }
+}
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+    body {
+        background-color: #ff0000;
+    }
+    /* Layout */
+    .container {
+        max-width: 1140px;
+    }
+
+    /* Cabeçalho */
+    header {
+        height: 120px;
+    }
+
+    #logo img {
+        width: 189px;
+        height: 189px;
+        margin-top: 30px;
+    }
+}
